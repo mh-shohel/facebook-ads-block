@@ -1,0 +1,18 @@
+{
+  "name": "Facebook Ads Block ",
+  "version": "1.0",
+  "description": "Block all Facebook ads from new design.",
+	  "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "manifest_version": 2
+}
