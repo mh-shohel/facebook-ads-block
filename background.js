@@ -27,14 +27,12 @@ setInterval(function(){
 		var i;
 		for (i = 0; i < sidebarAd.length; i++) {
 			var element = sidebarAd[i];
-			if (element) {
-				if (element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7')) {
-					if (element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').nextSibling) {
-						element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').nextSibling.remove();
-					}
-					//console.log(element.closest('div.cxgpxx05'));
-					element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').remove();
+			if (element && element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7')) {
+				if (element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').nextSibling) {
+					element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').nextSibling.remove();
 				}
+				//console.log(element.closest('div.cxgpxx05'));
+				element.closest('div.j83agx80.cbu4d94t.e5nlhep0.hv4rvrfc.dati1w0a.aodizinl.l9j0dhe7').remove();
 			}
 		}
 	}
@@ -47,10 +45,8 @@ var loopPost = element_contains('span', 'Sponsored');
 		var i;
 		for (i = 0; i < loopPost.length; i++) {
 			var element = loopPost[i];
-			if (element) {
-				if (element.closest('div.du4w35lb.k4urcfbm.l9j0dhe7.lzcic4wl.sjgh65i0')) {
-					element.closest('div.du4w35lb.k4urcfbm.l9j0dhe7.lzcic4wl.sjgh65i0').remove();
-				}
+			if (element && element.closest('div.du4w35lb.k4urcfbm.l9j0dhe7.lzcic4wl.sjgh65i0')) {
+				element.closest('div.du4w35lb.k4urcfbm.l9j0dhe7.lzcic4wl.sjgh65i0').remove();
 			}
 		}
 	}
